@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color1:rgb(181, 135, 135);
+            --color2:gray;
+            --color3:rgb(202, 202, 142);
+            --color4:rgb(150, 150, 200);
+        }
+       .box{
+         width:200px;
+         height:200px;
+         margin:25px;
+         border: 1px solid black;
+         float:left;
+       }
+       /* box-shadow: h-offset v-offset blur spread color */
+       .box1{
+        box-shadow: 10px 0 5px rgb(105, 96, 96)
+       }
+        .box2{
+         box-shadow: 0 10px 5px rgb(105, 96, 96)
+       }
+          .box3{
+        box-shadow: -10px 0 5px rgb(105, 96, 96)
+       }
+        .box4{
+         box-shadow: 0 -10px 5px rgb(105, 96, 96)
+       }
+        .box5{
+        box-shadow: 8px 8px 8px rgb(68, 65, 65),-8px -8px 8px rgb(106, 103, 103);
+       }
+        .box6{
+        /* inset border */
+         box-shadow: 0px 0px 15px 10px inset rgb(171, 160, 160)
+       }
+        .box7{
+            box-shadow: 10px 0px 5px rgb(210, 128, 128),
+            0px 10px 5px rgb(75, 171, 106),
+            -10px 0px 5px rgb(143, 149, 197),
+            0px -10px 5px rgb(198, 207, 94);
+       }
+       .box8{
+            box-shadow: 10px 0px 5px var(--color1),
+            0px 10px 5px var(--color2),
+            -10px 0px 5px var(--color3),
+            0px -10px 5px var(--color4);
+       }
+
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+    <div class="box box7"></div>
+    <div class="box box8"></div>
+</body>
+</html>
